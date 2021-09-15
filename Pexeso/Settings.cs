@@ -20,17 +20,25 @@ namespace Pexeso
 
         public SettingsData SettingsData { 
             get {
-                // dostat data z NameInputs a vložit do SettingsData 
-                // settingsData.names = 
                 return settingsData;
             } 
-            set { settingsData = value; } 
+            set { 
+                settingsData = value;
+                InitValues();
+            } 
         }
 
         public Settings() {
             InitializeComponent();
             nameInputs = new List<NameInput>();
             CreateNewNameInput();
+        }
+
+        private void InitValues() {
+            for(int i = 0; i < settingsData.names.Length; i++) {
+                nameInputs.Last().InputValue = settingsData.names[i];
+            }
+            numericUpDown1.Value = settingsData.numberOfPairs;
         }
 
         private void NameInputChanged(NameInput sender, bool isEmpty) {
@@ -58,6 +66,16 @@ namespace Pexeso
 
         private bool IsMaximumReached() {
             return nameInputs.Count >= MAX_PLAYERS;
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            var names = nameInputs.Where(x => !x.IsEmpty).Select(x => x.InputValue).ToList();
+            if(names.Count > 1) {
+                settingsData.names = names.ToArray();
+                settingsData.numberOfPairs = (int)numericUpDown1.Value;
+            } else {
+                MessageBox.Show("Nastavení nebylo uloženo, nebyl dostatečný počet hráčů!");
+            }
         }
     }
 }

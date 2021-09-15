@@ -20,7 +20,7 @@ namespace Pexeso
         }
 
         private void button1_Click(object sender, EventArgs e) {
-
+            Game g = new Game(settingsData);
         }
 
         private void button2_Click(object sender, EventArgs e) {
@@ -34,7 +34,7 @@ namespace Pexeso
             
             var dr = settings.ShowDialog();
             if(dr == DialogResult.OK) {
-                settingsData = settings.SettingsData;
+                MessageBox.Show("Uloženo!");
             }
         }
 

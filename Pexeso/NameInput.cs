@@ -20,6 +20,11 @@ namespace Pexeso
             get { return string.IsNullOrEmpty(textBox1.Text); }
         }
 
+        public string InputValue {
+            get { return textBox1.Text; }
+            set { textBox1.Text = value; }
+        }
+
         //public bool IsEmpty => string.IsNullOrEmpty(textBox1.Text);
 
         private static string[] names = new string[] {
