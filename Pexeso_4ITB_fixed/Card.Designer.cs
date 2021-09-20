@@ -30,13 +30,13 @@ namespace Pexeso
             // 
             // Card
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Name = "Card";
-            this.Size = new System.Drawing.Size(118, 118);
+            this.Size = new System.Drawing.Size(101, 101);
             this.Click += new System.EventHandler(this.Card_Click);
             this.ResumeLayout(false);
 

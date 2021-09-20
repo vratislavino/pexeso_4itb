@@ -9,6 +9,6 @@ namespace Pexeso
     public class SettingsData
     {
         public string[] names = new string[] { "Apolenka", "Kanec" };
-        public int numberOfPairs = 4;
+        public int numberOfPairs = 8;
     }
 }
