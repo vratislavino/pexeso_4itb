@@ -12,3 +12,17 @@ C:\Users\vrati\source\repos\Pexeso_4ITB_fixed\Pexeso_4ITB_fixed\obj\Debug\Pexeso
 C:\Users\vrati\source\repos\Pexeso_4ITB_fixed\Pexeso_4ITB_fixed\obj\Debug\Pexeso.Menu.resources
 C:\Users\vrati\source\repos\Pexeso_4ITB_fixed\Pexeso_4ITB_fixed\obj\Debug\Pexeso.NameInput.resources
 C:\Users\vrati\source\repos\Pexeso_4ITB_fixed\Pexeso_4ITB_fixed\obj\Debug\Pexeso.Settings.resources
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\bin\Debug\Pexeso_4ITB_fixed.exe.config
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\bin\Debug\Pexeso_4ITB_fixed.exe
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\bin\Debug\Pexeso_4ITB_fixed.pdb
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso_4ITB_fixed.csproj.AssemblyReference.cache
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso.Card.resources
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso.Game.resources
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso.Menu.resources
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso.NameInput.resources
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso_4ITB_fixed.Properties.Resources.resources
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso.Settings.resources
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso_4ITB_fixed.csproj.GenerateResource.cache
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso_4ITB_fixed.csproj.CoreCompileInputs.cache
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso_4ITB_fixed.exe
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso_4ITB_fixed.pdb

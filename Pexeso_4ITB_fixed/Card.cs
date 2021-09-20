@@ -41,7 +41,7 @@ namespace Pexeso
         }
 
         public void Flip() {
-            isFlipped = !isFlipped;
+            IsFlipped = !IsFlipped;
         }
 
         private void Card_Click(object sender, EventArgs e) {
