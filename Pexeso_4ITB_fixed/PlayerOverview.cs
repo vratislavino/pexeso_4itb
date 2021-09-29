@@ -21,6 +21,8 @@ namespace Pexeso
             }
         }
 
+        public string PlayerName => nameLabel.Text;
+
         bool isPlaying = false;
         public bool IsPlaying {
             get { return isPlaying; }

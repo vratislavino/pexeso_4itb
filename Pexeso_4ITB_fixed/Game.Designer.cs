@@ -26,8 +26,10 @@ namespace Pexeso
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.playersPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // panel1
@@ -45,6 +47,11 @@ namespace Pexeso
             this.playersPanel.Name = "playersPanel";
             this.playersPanel.Size = new System.Drawing.Size(311, 618);
             this.playersPanel.TabIndex = 1;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Game
             // 
@@ -64,5 +71,6 @@ namespace Pexeso
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel playersPanel;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -16,8 +16,13 @@ namespace Pexeso
         SettingsData settings;
         List<Card> cards = new List<Card>();
         List<PlayerOverview> players = new List<PlayerOverview>();
+        int currentPlayer = 0;
 
         List<string> imgPaths = new List<string>();
+
+        Card first = null;
+        Card second = null;
+
 
         public Game() {
             InitializeComponent();
@@ -55,6 +60,8 @@ namespace Pexeso
 
             RepositionCards();
             CreatePlayers();
+
+            players[currentPlayer].IsPlaying = true;
         }
 
         private void CreatePlayers() {
@@ -63,6 +70,12 @@ namespace Pexeso
                 players.Add(po);
                 playersPanel.Controls.Add(po);
             }
+        }
+
+        private void SwitchPlayer() {
+            players[currentPlayer].IsPlaying = false;
+            currentPlayer = (currentPlayer + 1) % players.Count;
+            players[currentPlayer].IsPlaying = true;
         }
 
         private void RepositionCards() {
@@ -98,7 +111,62 @@ namespace Pexeso
         }
 
         private void OnCardClicked(Card card) {
-            card.Flip();
+            if(!timer1.Enabled) {
+                if (first == null) {
+                    first = card;
+                    card.Flip();
+                    return;
+                }
+
+                if (second == null) {
+                    if (card == first)
+                        return;
+                    second = card;
+                    card.Flip();
+                    timer1.Start();
+                    return;
+                }
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e) {
+            timer1.Stop();
+            Console.WriteLine(first);
+            Console.WriteLine(second);
+            if(first.Equals(second)) {
+                players[currentPlayer].Score++;
+                panel1.Controls.Remove(first);
+                panel1.Controls.Remove(second);
+
+                cards.Remove(first);
+                cards.Remove(second);
+
+                first = null;
+                second = null;
+
+                CheckForWinner();
+            } else {
+                first.Flip();
+                second.Flip();
+
+                first = null;
+                second = null;
+                SwitchPlayer();
+            }
+        }
+        private void CheckForWinner() {
+            if (cards.Count == 0) {
+                List<PlayerOverview> best = new List<PlayerOverview>();
+                int max = players.Max(x => x.Score);
+                best = players.Where(x=>x.Score == max).ToList();
+                if(best.Count > 1) {
+                    MessageBox.Show("Je to nerozhodně, vítězí " + string.Join(", ", best.Select(x=>x.PlayerName)));
+                    this.Close();
+                } else {
+                    MessageBox.Show("Vítězem je " + best[0].PlayerName);
+                    this.Close();
+                }
+            }
         }
     }
 }

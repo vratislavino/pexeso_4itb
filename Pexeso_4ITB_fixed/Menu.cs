@@ -21,6 +21,11 @@ namespace Pexeso
 
         private void button1_Click(object sender, EventArgs e) {
             Game g = new Game(settingsData);
+            g.Show();
+            this.Hide();
+            g.FormClosing += (snd, evt) => {
+                this.Show();
+            };
         }
 
         private void button2_Click(object sender, EventArgs e) {
