@@ -26,3 +26,4 @@ C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso_4ITB_
 C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso_4ITB_fixed.csproj.CoreCompileInputs.cache
 C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso_4ITB_fixed.exe
 C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso_4ITB_fixed.pdb
+C:\Users\vrati\source\repos\pexeso_4itb\Pexeso_4ITB_fixed\obj\Debug\Pexeso.PlayerOverview.resources

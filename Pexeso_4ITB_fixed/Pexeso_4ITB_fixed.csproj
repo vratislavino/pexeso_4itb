@@ -70,6 +70,12 @@
     <Compile Include="NameInput.Designer.cs">
       <DependentUpon>NameInput.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlayerOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayerOverview.Designer.cs">
+      <DependentUpon>PlayerOverview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs">
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NameInput.resx">
       <DependentUpon>NameInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerOverview.resx">
+      <DependentUpon>PlayerOverview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -27,6 +27,7 @@ namespace Pexeso
         /// </summary>
         private void InitializeComponent() {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.playersPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // panel1
@@ -34,14 +35,23 @@ namespace Pexeso
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(674, 541);
+            this.panel1.Size = new System.Drawing.Size(674, 618);
             this.panel1.TabIndex = 0;
+            // 
+            // playersPanel
+            // 
+            this.playersPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.playersPanel.Location = new System.Drawing.Point(692, 12);
+            this.playersPanel.Name = "playersPanel";
+            this.playersPanel.Size = new System.Drawing.Size(311, 618);
+            this.playersPanel.TabIndex = 1;
             // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 745);
+            this.ClientSize = new System.Drawing.Size(1015, 641);
+            this.Controls.Add(this.playersPanel);
             this.Controls.Add(this.panel1);
             this.Name = "Game";
             this.Text = "Game";
@@ -53,5 +63,6 @@ namespace Pexeso
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.FlowLayoutPanel playersPanel;
     }
 }

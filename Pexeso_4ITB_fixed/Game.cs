@@ -15,6 +15,7 @@ namespace Pexeso
     {
         SettingsData settings;
         List<Card> cards = new List<Card>();
+        List<PlayerOverview> players = new List<PlayerOverview>();
 
         List<string> imgPaths = new List<string>();
 
@@ -53,6 +54,15 @@ namespace Pexeso
             }
 
             RepositionCards();
+            CreatePlayers();
+        }
+
+        private void CreatePlayers() {
+            for(int i = 0; i < settings.names.Length; i++) {
+                PlayerOverview po = new PlayerOverview(settings.names[i]);
+                players.Add(po);
+                playersPanel.Controls.Add(po);
+            }
         }
 
         private void RepositionCards() {
